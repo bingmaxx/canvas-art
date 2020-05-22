@@ -5,47 +5,22 @@ function resolve(dir) {
   return path.join(__dirname, dir);
 }
 
-const devServer = () => {
-  const url = 'https://www.bingmax.xyz';
-
-  const proxyList = ['/api'];
-  const proxy = {};
-  proxyList.forEach(key => {
-    proxy[key] = {
-      target: url,
-      // secure: false,
-      // ws: true,
-      changeOrigin: true,
-    };
-  });
-
-  return { proxy };
-};
-
 module.exports = {
   publicPath: '/',
   productionSourceMap: false,
 
-  // 代理
-  devServer: devServer(),
-
-  // alias 别名
-  // configureWebpack: {
-  //   resolve: {
-  //     alias: {
-  //       utils: '@/utils',
-  //       api: '@/api',
-  //       components: '@/components',
-  //     },
-  //   },
-  // },
+  pages: {
+    index: {
+      entry: 'examples/main.js',
+      template: 'public/index.html',
+      filename: 'index.html',
+    },
+  },
 
   chainWebpack: config => {
     config.resolve.alias
-      .set('@', resolve('src'))
-      .set('utils', resolve('src/utils'))
-      .set('api', resolve('src/api'))
-      .set('components', resolve('src/components'))
+      .set('@', resolve('examples'))
+      .set('utils', resolve('examples/utils'))
       .set('packages', resolve('packages'));
 
     config.module
@@ -54,7 +29,7 @@ module.exports = {
       .add('/packages/')
       .end()
       .include
-      .add('/src/')
+      .add('/examples/')
       .end()
       .use('babel')
       .loader('babel-loader')
@@ -66,8 +41,8 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'scss',
       patterns: [
-        path.resolve(__dirname, './src/styles/variables.scss'),
-        path.resolve(__dirname, './src/styles/mixin.scss'),
+        path.resolve(__dirname, './examples/styles/variables.scss'),
+        path.resolve(__dirname, './examples/styles/mixin.scss'),
       ],
     },
   },

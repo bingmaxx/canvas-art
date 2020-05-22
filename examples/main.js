@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import '@/styles/index.scss';
 
-import { toast } from 'packages/toast/index';
-import ElButton from 'packages/button/index';
+import { toast } from 'packages/toast';
+import ElButton from 'packages/button';
 
 import App from './App.vue';
 import router from './router';
