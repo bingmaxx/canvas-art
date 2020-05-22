@@ -9,7 +9,5 @@ export default new Router({
   routes: [
     { path: '/', name: '/', redirect: '/index' },
     { path: '/index', name: '首页', component: Import('index/Index') },
-    { path: '/sin', name: 'Sin', component: Import('sin/Sin') },
-    { path: '/lattice', name: 'Lattice', component: Import('lattice/Lattice') },
   ],
 });

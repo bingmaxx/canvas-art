@@ -1,15 +1,10 @@
 import { images, text } from 'utils/public';
-import { browser } from 'utils/index';
-// import VConsole from 'vconsole/dist/vconsole.min';
 
-// eslint-disable-next-line no-unused-vars
-// const vConsole = new VConsole();
 /**
  * App.vue js 逻辑
  */
 export class AppClass {
   constructor() {
-    this.isMobile = browser.versions.mobile;
     AppClass.faviconCheck();
     AppClass.titleCheck();
   }
