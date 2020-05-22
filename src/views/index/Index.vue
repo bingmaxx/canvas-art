@@ -1,9 +1,19 @@
 <template>
   <div class="container">
-    <p>Art...</p>
+    <p @click="showToast">Art...</p>
   </div>
 </template>
 
+
+<script>
+export default {
+  methods: {
+    showToast() {
+      this.$toast('chjalsjdflaks');
+    },
+  },
+};
+</script>
 
 <style lang="scss">
   .container {
