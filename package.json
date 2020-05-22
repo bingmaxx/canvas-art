@@ -1,5 +1,5 @@
 {
-  "name": "canvas_art",
+  "name": "canvas-art",
   "version": "0.1.0",
   "private": true,
   "main": "packages/index.js",
