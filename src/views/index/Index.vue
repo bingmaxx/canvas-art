@@ -1,6 +1,8 @@
 <template>
   <div class="container">
     <p @click="showToast">Art...</p>
+
+    <ElButton>按钮</ElButton>
   </div>
 </template>
 
