@@ -1,0 +1,38 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+// $justify, $align: flex-start | flex-end | center | space-between | space-around
+@mixin flex-row($justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flex-column($justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin background-center {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// 清除手机端选中态 高亮
+@mixin highlight-none {
+  -webkit-tap-highlight-color: transparent;
+}

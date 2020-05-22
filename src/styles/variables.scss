@@ -1,0 +1,48 @@
+// 字体
+$base-font-size: 16px;
+$font-size-llg: 24px;
+$font-size-lg: 20px;
+$font-size: 16px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+
+// 颜色
+$color-primary: #00D878;
+$color-success: #409EFF;
+$color-info: #909399;
+$color-warning: #FA9D3F;
+$color-danger: #FF3C3C;
+$color-theme: #333333;
+
+// 颜色: 主要文字, 常规文字, 次要文字, 占位文字
+$color-font-important: #303133;
+$color-font-normal: #606266;
+$color-font-extra: #909399;
+$color-font-holder: #C0C4CC;
+
+// 颜色: 边框
+$color-border1: #DCDFE6;
+$color-border2: #E4E7ED;
+$color-border3: #EBEEF5;
+$color-border4: #F2F6FC;
+
+// 颜色: 其它
+$layout-bg: #F0F2F5;
+$layout-bg-active: #E6F7FF;
+$separator: $color-border1; 
+
+// 长宽值
+$navbar-h: 72px;
+$navbar-m-h: 54px;
+$navbar-bg: white;
+$menu-w: 160px;
+$tail-h: 72px;
+
+// 媒体查询
+$screen-xs-max: 768px;
+$screen-sm-min: 768px;
+$screen-sm-max: 992px;
+$screen-md-min: 992px;
+$screen-md-max: 1200px;
+$screen-lg-min: 1200px;
+

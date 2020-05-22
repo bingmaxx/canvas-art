@@ -1,0 +1,43 @@
+@import "./variables.scss";
+ 
+.color-white { color: white !important; }
+.color-primary { color: $color-primary !important; }
+.color-success { color: $color-success !important; }
+.color-info { color: $color-info !important; }
+.color-warning { color: $color-warning !important; }
+.color-danger { color: $color-danger !important; }
+.color-theme { color: $color-theme !important; }
+
+.color-font-important { color: $color-font-important !important; }
+.color-font-normal { color: $color-font-normal !important; }
+.color-font-extra { color: $color-font-extra !important; }
+.color-font-holder { color: $color-font-holder !important; }
+
+.layout-bg { color: $layout-bg !important; }
+.layout-bg-active { color: $layout-bg-active !important; }
+.separator { color: $separator !important; }
+
+.color-border1 { color: $color-border1 !important; }
+.color-border2 { color: $color-border2 !important; }
+.color-border3 { color: $color-border3 !important; }
+.color-border4 { color: $color-border4 !important; }
+
+// 单行显示
+.single-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 鼠标类型: 手
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// 细实线
+.dashed {
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  border-top: 1px dashed #EBEEF5;
+}
