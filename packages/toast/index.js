@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 import fyChatToast from './src/fyChatToast.vue';
 
-export const toast = {};
+const toast = {};
 toast.install = Vue => {
   // 扩展 vue 插件
   const ToastCon = Vue.extend(fyChatToast);

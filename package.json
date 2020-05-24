@@ -1,10 +1,17 @@
 {
   "name": "canvas-art",
   "version": "0.1.0",
-  "private": true,
+  "author": "bingmax",
+  "description": "",
+  "keywords": [
+    "vue",
+    "canvas"
+  ],
+  "license": "MIT",
+  "private": false,
   "main": "packages/index.js",
   "scripts": {
-    "lib": "vue-cli-service build --target lib --name kui --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name canvas-art --dest lib packages/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "eslint --fix --ext .js,.vue src",

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import '@/styles/index.scss';
 
-import { toast } from 'packages/toast';
+import toast from 'packages/toast';
 import ElButton from 'packages/button';
 
 import App from './App.vue';
