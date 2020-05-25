@@ -1,8 +1,6 @@
-import ArtButton from './button';
 import ArtClock from './clock';
 
 const components = [
-  ArtButton,
   ArtClock,
 ];
 
@@ -20,6 +18,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
-  ArtButton,
   ArtClock,
 };
