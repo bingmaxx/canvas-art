@@ -8,6 +8,10 @@
     "canvas"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bingmaxx/canvas-art.git"
+  },
   "private": false,
   "main": "lib/art.umd.min.js",
   "scripts": {
