@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p @click="showToast">Art...</p>
+    <p>Art...</p>
 
     <ElButton>按钮</ElButton>
   </div>
@@ -10,9 +10,6 @@
 <script>
 export default {
   methods: {
-    showToast() {
-      this.$toast('chjalsjdflaks');
-    },
   },
 };
 </script>

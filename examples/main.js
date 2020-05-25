@@ -1,14 +1,12 @@
 import Vue from 'vue';
 import '@/styles/index.scss';
 
-import toast from 'packages/toast';
-import ElButton from 'packages/button';
+import Art from 'packages/index';
 
 import App from './App.vue';
 import router from './router';
 
-Vue.use(toast);
-Vue.use(ElButton);
+Vue.use(Art);
 
 Vue.config.productionTip = false;
 
