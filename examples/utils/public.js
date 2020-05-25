@@ -31,4 +31,5 @@ export const color = {
 
 export const packagesList = [
   { key: 'clock', value: '时钟' },
+  { key: 'lattice', value: '点阵' },
 ];
