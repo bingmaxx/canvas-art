@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import '@/styles/index.scss';
 
-import Art from 'packages/index';
+import CanvasArt from 'packages/index';
 
 import App from './App.vue';
 import router from './router';
 
-Vue.use(Art);
+Vue.use(CanvasArt);
 
 Vue.config.productionTip = false;
 

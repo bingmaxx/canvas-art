@@ -9,5 +9,6 @@ export default new Router({
   routes: [
     { path: '/', name: '/', redirect: '/index' },
     { path: '/index', name: '首页', component: Import('index/Index') },
+    { path: '/clock', name: '时钟', component: Import('clock/Index') },
   ],
 });
