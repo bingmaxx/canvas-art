@@ -5,16 +5,20 @@
 </template>
 
 <script>
-import { AppClass } from '@/logic/app.class';
+import { images } from 'utils/public';
 
 export default {
-  data() {
-    return {
-      appClass: {},
-    };
-  },
   mounted() {
-    this.appClass = new AppClass();
+    this.faviconCheck();
+  },
+
+  methods: {
+    faviconCheck() {
+      const link = document.querySelector("link[rel*='icon']");
+      link.type = 'image/png';
+      link.href = images.logo;
+      document.getElementsByTagName('head')[0].appendChild(link);
+    },
   },
 };
 </script>
