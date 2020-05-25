@@ -1,7 +1,7 @@
 /**
  * Clock 类
- * 属性：
- * 方法：
+ * 属性:
+ * 方法:
  */
 class Clock {
   constructor(options) {
@@ -13,10 +13,12 @@ class Clock {
 
     this.GRAY_MAIN = 'rgb(97, 97, 97)';
     this.GRAY_BORDER = 'rgb(88, 88, 88)';
+    this.RED_MAIN = 'rgb(199, 78, 81)';
+    this.RED_CIRCLE = 'rgb(182, 72, 74)';
 
     // 指针样式
     this.POINTER_H = {
-      l0: 0, // 反向长度
+      l0: 0, // 反向长度, 值为表盘直径的占比.
       l1: 0.2, // 指针长度
       r0: 0.025, // 指针尾端半径
       r1: 0.025, // 指针尖端半径
@@ -36,20 +38,21 @@ class Clock {
       l1: 0.35,
       r0: 0.0028,
       r1: 0.0015,
-      rgb: 'rgb(199, 78, 81)',
-      rgb_b: 'rgb(199, 78, 81)',
+      rgb: this.RED_MAIN,
+      rgb_b: this.RED_MAIN,
     };
 
-    // 指针上实心圆样式
+    // 指针上实心圆样式 - 时针/分针
     this.CIRCLE_0 = {
       r: 0.036, // 半径
       rgb: this.GRAY_MAIN, // 填充颜色
       rgb_b: this.GRAY_BORDER, // 边框颜色
     };
+    // 指针上实心圆样式 - 秒针
     this.CIRCLE_1 = {
       r: 0.016,
-      rgb: 'rgb(182, 72, 74)',
-      rgb_b: 'rgb(182, 72, 74)',
+      rgb: this.RED_CIRCLE,
+      rgb_b: this.RED_CIRCLE,
     };
 
     this.SHADOW = {
@@ -97,6 +100,7 @@ class Clock {
     ctx.arc(0, 0, ((R2 + R1) / 2) * width, 0, 2 * Math.PI);
     ctx.stroke();
 
+    // 边框描边
     ctx.lineWidth = 1;
     ctx.strokeStyle = '#e0e0e0';
     this.shadow(null);
@@ -109,7 +113,7 @@ class Clock {
 
     // 数字
     ctx.fillStyle = this.GRAY_MAIN;
-    ctx.font = `900 ${FONT_SIZE * width}px SimHei, STheiti`;
+    ctx.font = `600 ${FONT_SIZE * width}px SimHei, STheiti`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText('12', 0, -R3 * width);
@@ -119,7 +123,7 @@ class Clock {
     ctx.restore();
   }
 
-  // 绘制指针
+  // 绘制所有指针
   drawPointer() {
     const { ctx, width, height } = this.Canvas;
     const date = new Date();
