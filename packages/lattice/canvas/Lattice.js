@@ -1,6 +1,6 @@
-import { latticePub, latticeDataList } from '../utils/public';
-import { dot } from '../utils/func';
-import Rect from '../Rect';
+import { latticePub, latticeDataList } from './utils/public';
+import { dot } from './utils/func';
+import Rect from './Rect';
 
 /* 描述: 点阵类
  * 属性:

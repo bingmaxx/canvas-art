@@ -1,26 +1,3 @@
-// 文本样式相关
-export const textPub = {
-  style: {
-    color: '#000000',
-    alpha: 1,
-    size: 14,
-    family: 'Microsoft YaHei',
-    italic: 'normal',
-    weight: 'normal',
-    align: 'left',
-    letter_spacing: 0,
-    line_height: 1,
-    shadow: false,
-    shadow_color: '#000000',
-    shadow_blur: 5,
-    shadow_x: 5,
-    shadow_y: 5,
-    stroke: false,
-    stroke_color: '#ff0000',
-    stroke_width: 0,
-  },
-};
-
 // 点阵样式相关
 export const latticePub = {
   style: {
