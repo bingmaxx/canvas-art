@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="block">
-      <div class="box" v-for="item in typeList" :key="item.key" @click="toContent(item)">
+      <div class="box" v-for="item in packagesList" :key="item.key" @click="toPackage(item)">
         <p>{{item.value}}</p>
       </div>
     </div>
@@ -9,18 +9,19 @@
 </template>
 
 <script>
+import { packagesList } from 'utils/public';
+
 export default {
   data() {
     return {
-      typeList: [
-        { key: 'clock', value: '时钟', url: '/clock' },
-      ],
+      packagesList,
     };
   },
 
   methods: {
-    toContent({ url }) {
-      this.$router.push({ path: url });
+    toPackage({ key }) {
+      const { href } = this.$router.resolve({ path: `/${key}` });
+      window.open(href, '_blank');
     },
   },
 };

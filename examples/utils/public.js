@@ -15,8 +15,6 @@ export const images = imagesObj;
 
 export const text = {
   app_name: 'canvasArt',
-
-  host: `${document.location.protocol}//${document.domain}`,
 };
 
 /**
@@ -30,3 +28,7 @@ export const color = {
   danger: '#FF3C3C',
   theme: '#F7B500',
 };
+
+export const packagesList = [
+  { key: 'clock', value: '时钟' },
+];
