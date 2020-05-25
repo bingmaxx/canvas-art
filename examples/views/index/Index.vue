@@ -2,7 +2,7 @@
   <div class="container">
     <p>Art...</p>
 
-    <ElButton>按钮</ElButton>
+    <art-button>按钮</art-button>
   </div>
 </template>
 

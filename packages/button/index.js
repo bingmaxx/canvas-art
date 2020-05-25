@@ -1,8 +1,8 @@
-import ElButton from './src/button.vue';
+import ArtButton from './src/button.vue';
 
 /* istanbul ignore next */
-ElButton.install = function (Vue) {
-  Vue.component(ElButton.name, ElButton);
+ArtButton.install = function (Vue) {
+  Vue.component(ArtButton.name, ArtButton);
 };
 
-export default ElButton;
+export default ArtButton;

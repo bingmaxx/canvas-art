@@ -26,7 +26,7 @@
 /* eslint-disable no-underscore-dangle */
 
 export default {
-  name: 'ElButton',
+  name: 'ArtButton',
 
   inject: {
     elForm: {
